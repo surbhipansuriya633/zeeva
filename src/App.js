@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router';
 import './App.css';
+import ScrollToTop from './HOC/ScrollToTop';
+import Home from './Home/Home';
+import AboutUs from './AboutUs/AboutUs';
+import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/why-choose-us" element={<WhyChooseUs />} />
+          {/*  <Route path="/industries" element={<Industries />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/sustainability" element={<Sustainability />} />
+          <Route path="/partnership" element={<Partnership />} />
+          <Route path="/contact" element={<Contact />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
