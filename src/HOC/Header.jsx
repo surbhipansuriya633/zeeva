@@ -20,7 +20,8 @@ function Header() {
       {/* spacer */}
       <div className="header-space"></div>
 
-      <div className={`custom-header ${scrolled ? "scrolled" : ""}`}>
+      <div className={`custom-header`}>
+        {/* <div className={`custom-header ${scrolled ? "scrolled" : ""}`}> */}
         <div className="container-fluid">
           <div className="row align-items-center">
 
