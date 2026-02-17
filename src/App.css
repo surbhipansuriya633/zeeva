@@ -1,7 +1,13 @@
 :root {
-    --black: #000
+    --black: #000;
+    --white: white;
+    --RoyalBlue: #1E3A8A;
+    --LightGray: #F5F5F5;
+    --DarkGray: #333333;
 }
 
+
+/* HEADER ---START--- */
 .header-space {
     height: 95px;
 }
@@ -54,11 +60,11 @@
 }
 
 .nav-link {
-    color: #222;
+    color: #000 !important;
     font-weight: 500;
     margin-left: 2px;
     position: relative;
-    transition: 0.3s;
+    transition: 01s;
 }
 
 .nav-link::after {
@@ -68,16 +74,6 @@
     left: 0;
     width: 0%;
     height: 2px;
-    background: #007bff;
-    transition: 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-.nav-link:hover {
-    color: #007bff;
 }
 
 .menu-toggle {
@@ -98,13 +94,62 @@
 
 .alink {
     text-decoration: none;
-    color: black !important;
+    color: black;
     font-size: 16px !important;
     font-weight: 500 !important;
 }
 
 .custom-header.scrolled .alink {
     color: white !important;
+}
+
+
+/* ACTIVE TAB SHAPE */
+.nav-link:hover {
+    color: white !important;
+    position: relative;
+    z-index: 1;
+    box-shadow: 14px 4px 2px var(--LightGray);
+    color: var(--LightGray);
+    background: var(--RoyalBlue);
+}
+
+.custom-header.scrolled .nav-link:hover {
+    color: var(--black) !important;
+    box-shadow: 14px 4px 0px var(--LightGray);
+    color: var(--black);
+    outline: 2px groove black;
+    background: var(--LightGray);
+}
+
+.nav-link.active {
+    position: relative;
+    z-index: 1;
+    box-shadow: 14px 4px 0px var(--LightGray);
+    color: var(--LightGray) !important;
+    background: var(--RoyalBlue);
+}
+
+
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    inset: -8px -14px;
+    z-index: -1;
+    -webkit-clip-path: polygon(6% 0, 100% 0, 96% 100%, 0% 100%);
+    clip-path: polygon(6% 0, 100% 0, 96% 100%, 0% 100%);
+}
+
+.custom-header.scrolled .nav-link.active::before {
+    background: transparent;
+}
+
+.custom-header.scrolled .nav-link.active {
+    color: var(--black) !important;
+    box-shadow: 14px 4px 0px var(--white);
+    color: var(--black);
+    outline: 2px groove black;
+    background: var(--LightGray);
 }
 
 @media (max-width: 992px) {
@@ -142,3 +187,5 @@
         font-size: 14px;
     }
 }
+
+/* HEADER ---END--- */

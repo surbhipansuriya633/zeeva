@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaHome, FaLine } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,8 +35,8 @@ function Header() {
             <div className="col-lg-9 d-none d-lg-block pe-0 menuitem">
               <nav className="menu-box">
                 <ul className="nav justify-content-evenly align-items-center">
-                  <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/"><FaHome /></Link></li>
-                  <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">About</Link></li>
+                  <li className="nav-item"><NavLink className="nav-link alink fw-semibold" to="/"><FaHome /></NavLink></li>
+                  <li className="nav-item"><NavLink to="/about" className="nav-link alink">About</NavLink></li>
                   <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">Industries</Link></li>
                   <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">Products</Link></li>
                   <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">Sustainability</Link></li>
