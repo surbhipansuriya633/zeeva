@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom';
 import HOCcomp from '../HOC/HOCcomp'
+import { Carousel } from 'react-bootstrap';
+import '../Home/Home.css'
+import Button from '../HOC/Button';
 
 function Home() {
     return (
-        <div className='vh-100'>
-            <img src={require('../Assets/Image/broucher_image/Zeeva Brochure final draft_pages-to-jpg-0002.jpg')} alt="" className='img-fluid' />
+        <div>
+            <Button btnname="props.btnname" />
+            <br />
         </div>
     )
 }
