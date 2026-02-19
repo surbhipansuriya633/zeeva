@@ -86,7 +86,7 @@ function Footer() {
               data-aos-once="true"
             >
               <div className="ps-0 ps-lg-5">
-                <div className="jr_tittle textcolor">Quicked Link</div>
+                <div className="zeeva_tittle textcolor">Quicked Link</div>
                 <div className="p-1 pera pt-2 pt-3">
                   <Link
                     to={"/"}
@@ -185,7 +185,7 @@ function Footer() {
               data-aos-once="true"
             >
               <div>
-                <div className="jr_tittle textcolor">Contact Details</div>
+                <div className="zeeva_tittle textcolor">Contact Details</div>
                 <div className="p-1 pera pt-2">
                   <Link
                     to={
@@ -225,14 +225,14 @@ function Footer() {
                   </Link>
                 </div>
                 <div className="p-1 pera ">
-                  <div className="jr_tittle textcolor mb-2"><span style={{ fontSize: "12px" }}> Explore Our</span><br /> Color Spray Shade <span className="">Gallery</span></div>
+                  <div className="zeeva_tittle textcolor mb-2"><span style={{ fontSize: "12px" }}> Explore Our</span><br /> Color Spray Shade <span className="">Gallery</span></div>
                   <div className="mb-3">
                     <img src={require('../Assets/Image/broucher_image/Zeeva Brochure final draft_pages-to-jpg-0003.jpg')} alt="" height={50} width={50} className="ms-1" />
                     <img src={require('../Assets/Image/broucher_image/Zeeva Brochure final draft_pages-to-jpg-0003.jpg')} alt="" height={50} width={50} className="ms-1" />
                     <img src={require('../Assets/Image/broucher_image/Zeeva Brochure final draft_pages-to-jpg-0003.jpg')} alt="" height={50} width={50} className="ms-1" />
                     <img src={require('../Assets/Image/broucher_image/Zeeva Brochure final draft_pages-to-jpg-0003.jpg')} alt="" height={50} width={50} className="ms-1" />
                   </div>
-                  <div className="jr_tittle"><span></span></div>
+                  <div className="zeeva_tittle"><span></span></div>
                   <button className="button m-auto" style={{ "--clr": "var(--gold)" }}>
                     <span className="button__icon-wrapper">
                       <MdOutlineArrowOutward className="button__icon-svg" width="10" />

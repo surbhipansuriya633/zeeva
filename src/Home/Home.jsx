@@ -3,12 +3,13 @@ import HOCcomp from '../HOC/HOCcomp'
 import { Carousel } from 'react-bootstrap';
 import '../Home/Home.css'
 import Button from '../HOC/Button';
+import HomeAbout from './HomeAbout';
+import Headings from '../HOC/Headings';
 
 function Home() {
     return (
         <div>
-            <Button btnname="props.btnname" />
-            <br />
+            <HomeAbout />
         </div>
     )
 }
