@@ -1,4 +1,4 @@
-/* CONTENT */
+/* HOMEABOUT ---START-- */
 .content-wrapper {
     flex: 1;
 }
@@ -9,7 +9,6 @@
     margin-bottom: 25px;
 }
 
-/* FEATURES */
 .features {
     display: flex;
     gap: 40px;
@@ -22,7 +21,6 @@
 
 .features li {
     margin-bottom: 10px;
-    /* color: red; */
     position: relative;
     padding-left: 18px;
 }
@@ -35,3 +33,36 @@
     font-size: 16px;
     top: -2px;
 }
+
+/* HOMEABOUT ---END-- */
+
+/* HOMESTRENGTH ---START-- */
+.strength-item {
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.strength-item i {
+    font-size: 40px;
+    color: var(--black);
+    transition: 0.3s;
+}
+
+.strength-item p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* hover effect */
+.strength-item:hover i {
+    transform: scale(1.2);
+    color: var(--gold);
+}
+
+.strength-item:hover p {
+    color: var(--gold);
+}
+
+/* HOMESTRENGTH ---END-- */
