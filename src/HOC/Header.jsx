@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { FaHome, FaLine } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
+  console.log(scrolled);
 
   useEffect(() => {
     const handleScroll = () => {

@@ -11,7 +11,6 @@ import {
 import { FaMapLocationDot } from "react-icons/fa6";
 import { IoArrowRedoCircleOutline } from "react-icons/io5";
 import { MdOutlineArrowOutward, MdWifiCalling3 } from "react-icons/md";
-import { RiTimeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 function Footer() {
