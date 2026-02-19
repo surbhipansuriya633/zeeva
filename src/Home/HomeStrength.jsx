@@ -9,7 +9,7 @@ function HomeStrength() {
 
                     <Headings heading="Our aerosol expertise" tagline="Why customers trust our products" />
 
-                    <div class="row justify-content-evenly align-items-center mt-3">
+                    <div class="row justify-content-sm-evenly justify-content-between align-items-center text-start ms-sm-0 ms-2 mt-3">
 
                         <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3">
                             <i class="bi bi-graph-up-arrow"></i>
