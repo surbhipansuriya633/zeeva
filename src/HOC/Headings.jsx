@@ -12,6 +12,18 @@ function Headings(props) {
         </div>
     )
 }
+function HeadingsDark(props) {
+    return (
+        <div>
+
+            <div class="two my-2">
+                <h1 className='twoh1'>{props.heading}
+                    <span className='text-light'>{props.tagline}</span>
+                </h1>
+            </div>
+        </div>
+    )
+}
 
 
 
@@ -23,4 +35,4 @@ function SmallHeadings(smprops) {
     )
 }
 
-export { Headings, SmallHeadings }
+export { Headings, SmallHeadings, HeadingsDark }
