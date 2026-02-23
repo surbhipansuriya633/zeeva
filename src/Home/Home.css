@@ -251,3 +251,109 @@
 }
 
 /* HOMEPRODUCT ---END--- */
+
+/* HOMEWHYUS ---START---*/
+.performance-section {
+    padding: 50px 0 50px;
+    background-image: url(https://cdn.vectorstock.com/i/1000v/43/32/luxury-gold-wave-background-vector-61154332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.perf-item {
+    padding: 30px 10px;
+    position: relative;
+}
+
+.perf-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: #dcdfe3;
+}
+
+.perf-icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #0e1a26;
+}
+
+.perf-item span {
+    font-weight: 600;
+    color: #0e1a26;
+}
+
+.surface-section {
+    padding: 40px 0 80px;
+}
+
+.surface-box {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.surface-box:hover {
+    transform: scale(1.03);
+}
+
+.surface-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    font-weight: 600;
+    color: #0e1a26;
+    border-top: 2px solid #ff6a00;
+}
+
+/* HOMEWHYUS ---END---*/
+
+/* HOMECONTACT ---END---*/
+
+.homecta {
+    background-image: url(../Assets/Image/CTA.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 100px 1500px rgba(0, 0, 0, 0.7);
+
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* HOMECONTACT ---END---*/
