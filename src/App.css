@@ -119,6 +119,30 @@
     clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.offcanvas {
+    background: linear-gradient(160deg, #0a0a0a, #1a1a1a);
+    position: relative;
+}
+
+.offcanvas::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 60%);
+    animation: mistMove 18s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes mistMove {
+    from {
+        transform: translate(-20%, -20%);
+    }
+
+    to {
+        transform: translate(20%, 20%);
+    }
+}
+
 @media (max-width: 992px) {
     .logo img {
         height: 55px;
@@ -127,10 +151,10 @@
     .header-space {
         height: 55px;
     }
-
+/* 
     .nav-link {
         color: black !important
-    }
+    } */
 }
 
 .offcanvas.offcanvas-end {
