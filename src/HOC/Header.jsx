@@ -38,7 +38,7 @@ function Header() {
               <nav className="menu-box">
                 <ul className="nav justify-content-evenly align-items-center">
                   <li className="nav-item"><NavLink className="nav-link alink fw-semibold" to="/"><FaHome /></NavLink></li>
-                  <li className="nav-item"><NavLink to="/about" className="nav-link alink">About</NavLink></li>
+                  <li className="nav-item"><NavLink to="/aboutus" className="nav-link alink">About</NavLink></li>
                   <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">Industries</Link></li>
                   <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">Products</Link></li>
                   <li className="nav-item"><Link className="nav-link alink fw-semibold" to="/">Sustainability</Link></li>
@@ -80,7 +80,7 @@ function Header() {
         <div className="offcanvas-body">
           <ul className="mobile-menu">
             <li className="nav-item"><Link className="nav-link alink fw-bold" to="/">Home</Link></li>
-            <li className="nav-item"><Link className="nav-link alink fw-bold" to="/">About</Link></li>
+            <li className="nav-item"><Link className="nav-link alink fw-bold" to="/aboutus">About</Link></li>
             <li className="nav-item"><Link className="nav-link alink fw-bold" to="/">Industries</Link></li>
             <li className="nav-item"><Link className="nav-link alink fw-bold" to="/">Products</Link></li>
             <li className="nav-item"><Link className="nav-link alink fw-bold" to="/">Sustainability</Link></li>

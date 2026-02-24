@@ -1,9 +1,11 @@
-import React from 'react'
 import HOCcomp from '../HOC/HOCcomp'
-
+import AboutZeeva from './AboutZeeva'
+import '../AboutUs/About.css'
 function AboutUs() {
   return (
-    <div>AboutUs</div>
+    <>
+      <AboutZeeva />
+    </>
   )
 }
 
