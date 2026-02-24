@@ -18,7 +18,7 @@
 
 /* HEADER ---START--- */
 .header-space {
-    height: 95px;
+    height: 70px;
 }
 
 .custom-header {
@@ -123,6 +123,14 @@
     .logo img {
         height: 55px;
     }
+
+    .header-space {
+        height: 55px;
+    }
+
+    .nav-link {
+        color: black !important
+    }
 }
 
 .offcanvas.offcanvas-end {
@@ -132,7 +140,7 @@
 @media (max-width: 768px) {
 
     .header-space {
-        height: 80px;
+        height: 55px;
     }
 
     .menu-box {

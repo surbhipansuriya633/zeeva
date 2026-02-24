@@ -1,9 +1,8 @@
-import React from 'react'
 import { Headings, SmallHeadings } from '../HOC/Headings'
 
 function HomeAbout() {
     return (
-        <div className='container-lg'>
+        <div className='container-lg mt-4'>
             <div className='row align-items-end justify-content-center'>
                 <div className='col-lg-4 col-md-5 col-sm-7  col-10'>
                     <img src={require('../Assets/Image/broucher_image/Zeeva Brochure final draft_pages-to-jpg-0002.jpg')} alt="" className='img-fluid mb-4' />

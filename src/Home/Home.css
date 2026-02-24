@@ -357,3 +357,111 @@
 }
 
 /* HOMECONTACT ---END---*/
+
+/* HOMECAROUSEL ---START */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #0b0b0b, #1c1c1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+/* product images */
+.product {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: opacity 1.2s ease-in-out,
+        transform 1.2s ease-in-out,
+        filter 1.2s ease-in-out;
+    will-change: transform, opacity;
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: scale(0.95);
+    filter: blur(10px);
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+.next {
+    opacity: 0;
+}
+
+.mist {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent 70%);
+    opacity: 0;
+}
+
+.mist.spray {
+    animation: spraySpread 1.2s ease-out forwards;
+}
+
+@keyframes spraySpread {
+    0% {
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(8);
+        opacity: 0;
+    }
+}
+
+.highlight-text {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--gold);
+    position: relative;
+    top: 65px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* shine layer */
+.highlight-text.shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -70%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.85),
+            transparent);
+    animation: shineSweep 0.9s ease forwards;
+}
+
+@keyframes shineSweep {
+    to {
+        left: 130%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+        height: 50vh;
+    }
+}
+
+/* HOMECAROUSEL ---END */
