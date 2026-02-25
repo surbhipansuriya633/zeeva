@@ -9,7 +9,7 @@ function HomeAbout() {
                 </div>
                 <div className='col-lg-7 col-md-7 col-sm-10'>
                     <div className="content-wrapper">
-                        <Headings heading="ABOUT" tagline="ZEEVA CHEMICALS" />
+                        <Headings heading="About" tagline="ZEEVA CHEMICALS" />
 
                         <p className="description">
                             Zeeva Chemicals was started with one clear goa, to make reliable aerosol spray products that actually work, every single
