@@ -113,3 +113,35 @@
 }
 
 /* ABOUTWHYUS ---END--- */
+.trust-card {
+    background: #f8f8f8;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.trust-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trust-card.small img {
+    height: 180px;
+}
+
+.trust-label {
+    padding: 14px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.highlight-line {
+    color: var(--black);
+    background: var(--gold);
+    font-weight: 600;
+    font-size: 18px;
+}

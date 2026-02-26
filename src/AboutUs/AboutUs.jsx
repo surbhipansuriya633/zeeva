@@ -4,6 +4,7 @@ import '../AboutUs/About.css'
 import AboutMissionVision from './AboutMissionVision'
 import AboutExpertise from './AboutExpertise'
 import AboutWhyUs from './AboutWhyUs'
+import TrustBuilders from './TrustBuilders'
 function AboutUs() {
   return (
     <>
@@ -11,6 +12,7 @@ function AboutUs() {
       <AboutMissionVision />
       <AboutExpertise />
       <AboutWhyUs />
+      <TrustBuilders />
     </>
   )
 }
