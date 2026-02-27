@@ -11,27 +11,27 @@ function HomeStrength() {
 
                     <div class="row justify-content-sm-evenly justify-content-between align-items-center text-start ms-sm-0 ms-2 mt-3">
 
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3">
+                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
                             <i class="bi bi-graph-up-arrow"></i>
                             <p>Consistent <br /> Performance</p>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3">
+                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
                             <i class="bi bi-droplet"></i>
                             <p>Leak-proof <br /> Packaging</p>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3">
+                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
                             <i class="bi bi-shield-check"></i>
                             <p>Quality Tested <br />Output</p>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3">
+                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
                             <i class="bi bi-gear"></i>
                             <p>Industrial-Grade <br />Formulations</p>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3">
+                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
                             <i class="bi bi-sliders"></i>
                             <p>Flexible <br />Production</p>
                         </div>

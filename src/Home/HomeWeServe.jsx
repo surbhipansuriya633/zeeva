@@ -35,14 +35,14 @@ function HomeWeServe() {
                         <div className="col-lg-6">
                             <HeadingsDark heading="The Industries" tagline="We Serve" />
 
-                            <p className="desc">
+                            <p className="desc" data-aos="fade-right" data-aos-duration="1000">
                                 Every industry has different needs, and we respect that. A
                                 medical product cannot be treated like a household spray.
                                 We understand usage, storage, and safety expectations
                                 before production begins.
                             </p>
 
-                            <p className="desc">
+                            <p className="desc" data-aos="fade-right" data-aos-duration="1000">
                                 This helps us deliver products
                                 that fit the industry, the user, and the real working
                                 conditions they face every day
@@ -56,7 +56,7 @@ function HomeWeServe() {
                                 <div className="center-circle"><img src={require('../Assets/Image/broucher_image/img4.jpg')} alt="" className="img-fluid" /></div>
 
                                 {industries.map((item, index) => (
-                                    <div key={index} className={`orbit-item rounded-5 item${index}`}>
+                                    <div key={index} className={`orbit-item rounded-5 item${index}`} data-aos="fade-left" data-aos-duration="1000">
                                         <img src={item.img} alt={item.name} />
                                         <span>{item.name}</span>
                                     </div>

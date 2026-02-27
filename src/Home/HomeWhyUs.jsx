@@ -10,12 +10,12 @@ function HomeWhyUs() {
         { icon: <FaLayerGroup />, text: "Multiple surfaces" },
     ];
     const surfaces = [
-        { name: "Wood", img: require('../Assets/Image/wood.jpg') },
-        { name: "Metal", img: require('../Assets/Image/metal.jpg') },
-        { name: "Plastic", img: require('../Assets/Image/plastic.jpg') },
-        { name: "Glass", img: require('../Assets/Image/glass.jpg') },
-        { name: "Ceramic", img: require('../Assets/Image/Ceramic.jpg') },
-        { name: "Stone", img: require('../Assets/Image/Stone.jpg') },
+        { name: "Wood", img: require('../Assets/Image/wood.jpg'), delay: "1000" },
+        { name: "Metal", img: require('../Assets/Image/metal.jpg'), delay: "1100" },
+        { name: "Plastic", img: require('../Assets/Image/plastic.jpg'), delay: "1200" },
+        { name: "Glass", img: require('../Assets/Image/glass.jpg'), delay: "1300" },
+        { name: "Ceramic", img: require('../Assets/Image/Ceramic.jpg'), delay: "1400" },
+        { name: "Stone", img: require('../Assets/Image/Stone.jpg'), delay: "1500" },
     ];
 
 
@@ -29,7 +29,7 @@ function HomeWhyUs() {
 
                     <div className="row performance-row text-center">
                         {benefits.map((item, i) => (
-                            <div key={i} className="col-6 col-md perf-item">
+                            <div key={i} className="col-6 col-md perf-item" data-aos="fade" data-aos-duration="1000">
                                 <div className="perf-icon text-light">{item.icon}</div>
                                 <span className='text-light'>{item.text}</span>
                             </div>
@@ -48,7 +48,7 @@ function HomeWhyUs() {
                     </div>
                     <div className="row g-3">
                         {surfaces.map((s, i) => (
-                            <div key={i} className="col-6 col-sm-4 col-lg-2">
+                            <div key={i} className="col-6 col-sm-4 col-lg-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay={s.delay}>
                                 <div
                                     className="surface-box"
                                     style={{ backgroundImage: `url(${s.img})` }}

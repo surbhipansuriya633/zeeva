@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -6,8 +7,15 @@ import ScrollToTop from './HOC/ScrollToTop';
 import Home from './Home/Home';
 import AboutUs from './AboutUs/AboutUs';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
+import Aos from 'aos';
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <BrowserRouter>
