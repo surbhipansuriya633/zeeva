@@ -29,7 +29,7 @@ function Header() {
             {/* Logo */}
             <div className="col-lg-3 col-6 p-0">
               <div className="logo text-center">
-                <img src={require('../Assets/Image/White_zeeva_logo.png')} alt="logo" />
+                <img src={require('../Assets/Image/logo_png.png')} alt="logo" />
               </div>
             </div>
 
