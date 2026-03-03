@@ -5,22 +5,37 @@ const slides = [
         title: "Zinc Spray",
         desc: "Advanced Anti-Rust Protection",
         // img: require('../Assets/Image/carousel1.jpg')
-        img: "https://multimedia.3m.com/mws/media/1119340J/3m-tm-zinc-spray-16-501-comfort-grip-fence-application.jpg?width=506"
+        img: "https://5.imimg.com/data5/SELLER/Default/2026/1/575951549/OU/LC/JN/256033009/zinc-metal-spray.jpg"
     },
     {
-        title: "Lubricant Spray",
+        title: "Advance Lubricant",
         desc: "Smooth Mechanical Movement",
-        img: require('../Assets/Image/carousel2.jpg')
+        // img: require('../Assets/Image/carousel2.jpg')
+        img: "https://5.imimg.com/data5/SELLER/Default/2026/1/576441571/PV/GI/TQ/256033009/lubricant-spray-1-500x500.png"
+    },
+    {
+        title: "Chain Lube",
+        desc: "Smooth Mechanical Movement",
+        // img: require('../Assets/Image/carousel2.jpg')
+        img: "https://5.imimg.com/data5/SELLER/Default/2021/9/JA/ON/RL/12840106/img-20210516-wa0057-250x250.jpg"
     },
     {
         title: "Silicone Spray",
         desc: "Water Resistant Protection",
-        img: require('../Assets/Image/carousel1.jpg')
+        // img: require('../Assets/Image/carousel1.jpg')
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6i003Ebu87xi55Xm062Io_VfOCNZJYLcCOg&s"
     },
     {
         title: "Color Spray",
         desc: "Smooth & Glossy Finish",
-        img: require('../Assets/Image/carousel2.jpg')
+        // img: require('../Assets/Image/carousel2.jpg')
+        img: "https://5.imimg.com/data5/SELLER/Default/2026/1/575932827/GN/XW/CE/256033009/1-3-500x500.jpg"
+    },
+    {
+        title: "Stain Lifting",
+        desc: "Smooth & Glossy Finish",
+        // img: require('../Assets/Image/carousel2.jpg')
+        img: "https://img.youtube.com/vi/7iHWa6mHJFk/0.jpg"
     }
 ];
 function HomeCarousel() {

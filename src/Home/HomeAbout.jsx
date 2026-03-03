@@ -90,13 +90,13 @@ function HomeAbout() {
                         <div className="pt-1">
                             <div className="d-block d-lg-flex justify-content-between">
                                 <div>
-                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
+                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500">
                                         <span className="pe-2 fs-5">
                                             <IoMdCheckboxOutline />
                                         </span>
                                         <div className="text-lowercase kjh">Strong focus on manufacturing excellence</div>
                                     </div>
-                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
+                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500">
                                         <span className="pe-2 fs-5">
                                             <IoMdCheckboxOutline />
                                         </span>
@@ -104,13 +104,13 @@ function HomeAbout() {
                                     </div>
                                 </div>
                                 <div className="ps-lg-4 ps-0">
-                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
+                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500">
                                         <span className="pe-2 fs-5">
                                             <IoMdCheckboxOutline />
                                         </span>
                                         <div className="text-lowercase kjh">Flexible production for growing businesses</div>
                                     </div>
-                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
+                                    <div className="d-flex  pt-2" data-aos="fade" data-aos-duration="1500">
                                         <span className="pe-2 fs-5">
                                             <IoMdCheckboxOutline />
                                         </span>
