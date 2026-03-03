@@ -14,7 +14,7 @@ function HomeWeServe() {
         },
         {
             name: "Personal Care & Hygiene",
-            img: require('../Assets/Image/personalcare.png'),
+            img: require('../Assets/Image/personalcare.removebg.png'),
         },
         {
             name: "Hospitality & Facility Care",
@@ -22,7 +22,7 @@ function HomeWeServe() {
         },
         {
             name: "Home & Surface Care",
-            img: require('../Assets/Image/Homecare.png'),
+            img: require('../Assets/Image/Homecare.removebg.png'),
         },
     ];
     return (
