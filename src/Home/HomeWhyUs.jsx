@@ -25,7 +25,7 @@ function HomeWhyUs() {
             <section className="performance-section">
                 <div className="container">
 
-                    <HeadingsDark heading="Why Us" tagline="Why This Spray Works Well" />
+                    <HeadingsDark heading="Why Us?" tagline="Why This Spray Works Well" />
 
                     <div className="row performance-row text-center">
                         {benefits.map((item, i) => (

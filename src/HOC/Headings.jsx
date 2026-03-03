@@ -17,7 +17,7 @@ function HeadingsDark(props) {
         <div>
 
             <div class="two my-2">
-                <h1 className='twoh1 fw-bold'>{props.heading}
+                <h1 className='twoh1 fw-bold text-info'>{props.heading}
                     <span className='text-light'>{props.tagline}</span>
                 </h1>
             </div>
