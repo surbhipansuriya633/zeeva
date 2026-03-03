@@ -8,6 +8,8 @@ import Home from './Home/Home';
 import AboutUs from './AboutUs/AboutUs';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 import Aos from 'aos';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   useEffect(() => {

@@ -5,7 +5,7 @@ function Headings(props) {
         <div>
 
             <div class="two my-2">
-                <h1 className='twoh1' data-aos="fade-up" data-aos-duration="1000">{props.heading}
+                <h1 className='twoh1 fw-bold' data-aos="fade-up" data-aos-duration="1000">{props.heading}
                     <span data-aos="fade-up" data-aos-duration="1000">{props.tagline}</span>
                 </h1>
             </div>
@@ -17,7 +17,7 @@ function HeadingsDark(props) {
         <div>
 
             <div class="two my-2">
-                <h1 className='twoh1'>{props.heading}
+                <h1 className='twoh1 fw-bold'>{props.heading}
                     <span className='text-light'>{props.tagline}</span>
                 </h1>
             </div>

@@ -1,15 +1,20 @@
 :root {
-    --black: #000;
-    --white: white;
     --RoyalBlue: #1E3A8A;
     --LightGray: #F5F5F5;
+    --white: white;
     --DarkGray: #333333;
-    --gold: #cca834;
+    --black: #000;
+    /* --gold: #cca834; */
+    --gold: #00457c;
     --fontstyle--: "Raleway", sans-serif;
 }
 
 * {
     font-family: "Raleway", sans-serif;
+}
+
+body {
+    overflow-x: hidden !important;
 }
 
 .textcolor {
@@ -151,7 +156,8 @@
     .header-space {
         height: 55px;
     }
-/* 
+
+    /* 
     .nav-link {
         color: black !important
     } */

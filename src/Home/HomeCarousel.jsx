@@ -4,7 +4,8 @@ const slides = [
     {
         title: "Zinc Spray",
         desc: "Advanced Anti-Rust Protection",
-        img: require('../Assets/Image/carousel1.jpg')
+        // img: require('../Assets/Image/carousel1.jpg')
+        img: "https://multimedia.3m.com/mws/media/1119340J/3m-tm-zinc-spray-16-501-comfort-grip-fence-application.jpg?width=506"
     },
     {
         title: "Lubricant Spray",
@@ -50,12 +51,14 @@ function HomeCarousel() {
 
             <img
                 src={slides[current].img}
+                style={{ filter: " brightness(50%)" }}
                 className={`product current ${animate ? "fadeOut" : ""}`}
                 alt=""
             />
 
             <img
                 src={slides[next].img}
+                style={{ filter: " brightness(50%)" }}
                 className={`product next ${animate ? "fadeIn" : ""}`}
                 alt=""
             />

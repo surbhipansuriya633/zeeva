@@ -1,47 +1,47 @@
-import React from 'react'
-import { Headings } from '../HOC/Headings'
+import { Headings } from "../HOC/Headings";
 
 function HomeStrength() {
+    const items = [
+        { icon: "bi-graph-up-arrow", text: "Consistent Performance" },
+        { icon: "bi-droplet", text: "Leak-proof Packaging" },
+        { icon: "bi-shield-check", text: "Quality Tested Output" },
+        { icon: "bi-gear", text: "Industrial-Grade Formulations" },
+        { icon: "bi-sliders", text: "Flexible Production" },
+    ];
+
     return (
-        <div>
-            <section class="strength-section py-5">
-                <div class="container">
+        <section className="strength-section py-5 bg-body-tertiary">
+            <div className="container">
 
-                    <Headings heading="Our aerosol expertise" tagline="Why customers trust our products" />
-
-                    <div class="row justify-content-sm-evenly justify-content-between align-items-center text-start ms-sm-0 ms-2 mt-3">
-
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
-                            <i class="bi bi-graph-up-arrow"></i>
-                            <p>Consistent <br /> Performance</p>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
-                            <i class="bi bi-droplet"></i>
-                            <p>Leak-proof <br /> Packaging</p>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
-                            <i class="bi bi-shield-check"></i>
-                            <p>Quality Tested <br />Output</p>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
-                            <i class="bi bi-gear"></i>
-                            <p>Industrial-Grade <br />Formulations</p>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6 strength-item p-0 my-3" data-aos="fade" data-aos-duration="1000">
-                            <i class="bi bi-sliders"></i>
-                            <p>Flexible <br />Production</p>
-                        </div>
-
-                    </div>
+                <div data-aos="fade-down">
+                    <Headings
+                        heading="Our Aerosol Expertise"
+                        tagline="Why customers trust our products"
+                    />
                 </div>
-            </section>
 
-        </div>
-    )
+                <div className="row justify-content-center justify-content-lg-between mt-5">
+
+                    {items.map((item, index) => (
+                        <div
+                            key={index}
+                            className="col-lg-2 col-md-4 col-6 mb-lg-0 mb-3"
+                            data-aos="zoom-in-up"
+                            data-aos-delay={index * 150}
+                        >
+                            <div className="strength-card text-center h-100">
+                                <div className="icon-wrapper">
+                                    <i className={`bi ${item.icon}`}></i>
+                                </div>
+                                <p>{item.text}</p>
+                            </div>
+                        </div>
+                    ))}
+
+                </div>
+            </div>
+        </section>
+    );
 }
 
-export default HomeStrength
+export default HomeStrength;

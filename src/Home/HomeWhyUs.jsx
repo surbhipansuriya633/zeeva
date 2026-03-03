@@ -40,20 +40,30 @@ function HomeWhyUs() {
             </section>
             <section className="surface-section">
                 <div className="container">
-                    <div className="mt-3 mb-md-3 mb-0">
+
+                    <div data-aos="fade-up">
                         <Headings
                             tagline="Even color. Clean finish. Less effort."
                             heading="Works Well On"
                         />
                     </div>
-                    <div className="row g-3">
+
+                    <div className="row g-4 mt-4">
                         {surfaces.map((s, i) => (
-                            <div key={i} className="col-6 col-sm-4 col-lg-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay={s.delay}>
+                            <div
+                                key={i}
+                                className="col-6 col-sm-4 col-lg-2"
+                                data-aos="fade-up"
+                                data-aos-delay={i * 120}
+                            >
                                 <div
                                     className="surface-box"
                                     style={{ backgroundImage: `url(${s.img})` }}
                                 >
-                                    <div className="surface-label">{s.name}</div>
+                                    <div className="surface-overlay"></div>
+                                    <div className="surface-label">
+                                        {s.name}
+                                    </div>
                                 </div>
                             </div>
                         ))}

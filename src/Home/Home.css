@@ -1,5 +1,5 @@
 /* HOMEABOUT ---START-- */
-.content-wrapper {
+/* .content-wrapper {
     flex: 1;
 }
 
@@ -32,37 +32,126 @@
     color: var(--gold);
     font-size: 16px;
     top: -2px;
+} */
+
+.aboutslider {
+    width: 38%;
+}
+
+.sliderproduct_image {
+    width: 170px;
+    height: 170px;
+}
+
+.aboutslide_sec {
+    margin-top: -210px;
+}
+
+.shadow_image {
+    filter: drop-shadow(10px 10px 15px rgba(128, 128, 128, 0.929)) !important;
+}
+
+.slider_imageaboutus {
+    height: 260px;
+}
+
+@media only screen and (max-width: 450px) {
+    .aboutslide_sec {
+        margin-top: -110px;
+    }
+
+    .aboutslider {
+        width: 50%;
+    }
+
+    .slider_imageaboutus {
+        height: 170px !important;
+    }
+
+    .choose_icon {
+        width: 90px;
+    }
+
 }
 
 /* HOMEABOUT ---END-- */
 
 /* HOMESTRENGTH ---START-- */
-.strength-item {
-    margin-bottom: 30px;
+.strength-section {
+    background: var(--white);
+    position: relative;
+}
+
+.strength-section::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(204, 168, 52, 0.12), transparent 70%);
+    top: -80px;
+    right: -80px;
+    z-index: 0;
+}
+
+.strength-card {
+    background: var(--white);
+    border-radius: 18px;
+    padding: 35px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: 0.4s ease;
     cursor: pointer;
-    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-.strength-item i {
-    font-size: 40px;
+.strength-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 15px 35px rgba(204, 168, 52, 0.25);
+}
+
+.icon-wrapper {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(204, 168, 52, 0.1);
+    transition: 0.4s ease;
+}
+
+.icon-wrapper i {
+    font-size: 28px;
+    color: var(--gold);
+    transition: 0.4s ease;
+}
+
+.strength-card:hover .icon-wrapper {
+    background: var(--gold);
+}
+
+.strength-card:hover .icon-wrapper i {
+    color: var(--white);
+    transform: scale(1.15);
+}
+
+.strength-card p {
     color: var(--black);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
     transition: 0.3s;
 }
 
-.strength-item p {
-    margin-top: 10px;
-    font-weight: 500;
-    color: #333;
-}
-
-/* hover effect */
-.strength-item:hover i {
-    transform: scale(1.2);
+.strength-card:hover p {
     color: var(--gold);
 }
 
-.strength-item:hover p {
-    color: var(--gold);
+.strength-card {
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* HOMESTRENGTH ---END-- */
@@ -206,7 +295,6 @@
     transition: 0.3s ease;
     height: 100%;
     border: 2px solid var(--gold);
-    /* box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06); */
 }
 
 .product-card img {
@@ -224,7 +312,6 @@
 .product-card p {
     color: #777;
     font-size: 14px;
-    /* min-height: 40px; */
 }
 
 .product-card:hover {
@@ -261,8 +348,6 @@
     background-position: center center;
 }
 
-
-
 .perf-item {
     padding: 30px 10px;
     position: relative;
@@ -290,33 +375,47 @@
 }
 
 .surface-section {
-    padding: 40px 0 80px;
+    padding: 80px 0;
+    background: var(--white);
 }
 
 .surface-box {
-    height: 150px;
+    height: 170px;
     background-size: cover;
     background-position: center;
-    border-radius: 6px;
+    border-radius: 14px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
+    transition: 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .surface-box:hover {
-    transform: scale(1.03);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.surface-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.1));
+    transition: 0.4s;
 }
 
 .surface-label {
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
+    left: 0;
     width: 100%;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.92);
+    text-align: center;
     font-weight: 600;
-    color: #0e1a26;
-    border-top: 2px solid #ff6a00;
+    color: var(--white);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
 }
 
 /* HOMEWHYUS ---END---*/
@@ -430,14 +529,13 @@
 .highlight-text {
     font-size: 42px;
     font-weight: 700;
-    color: var(--gold);
+    color: white;
     position: relative;
     top: 65px;
     overflow: hidden;
     display: inline-block;
 }
 
-/* shine layer */
 .highlight-text.shine::after {
     content: "";
     position: absolute;

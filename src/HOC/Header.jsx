@@ -29,7 +29,7 @@ function Header() {
             {/* Logo */}
             <div className="col-lg-3 col-6 p-0">
               <div className="logo text-center">
-                <img src={require('../Assets/Image/logo_png.png')} alt="logo" />
+                <img src={require('../Assets/Image/White_zeeva_logo.png')} alt="logo" />
               </div>
             </div>
 
@@ -51,13 +51,13 @@ function Header() {
             {/* Toggle Button (MD & below) */}
             <div className="col-6 d-lg-none">
               <div className="d-flex justify-content-end align-items-center">
-                <Link className="fw-bold text-dark mx-3" to="/"><FaHome className="fs-4" /></Link>
+                <Link className="fw-bold text-light mx-3" to="/"><FaHome className="fs-4" /></Link>
                 <button
                   className="menu-toggle"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#mobileMenu"
                 >
-                  <IoMenu className="fs-2" />
+                  <IoMenu className="fs-2 text-light" />
                 </button>
               </div>
             </div>

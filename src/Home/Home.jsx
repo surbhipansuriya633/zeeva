@@ -10,7 +10,7 @@ import HomeWhyUs from './HomeWhyUs';
 
 function Home() {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <HomeCarousel />
             <HomeAbout />
             <HomeStrength />
